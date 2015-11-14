@@ -1,4 +1,5 @@
 var MyApp = angular.module("MyApp",[]);
+
 MyApp.controller("MyCtrl",function($scope,$http){
 	// deklarasi variabel awal
 	$scope.aksi = "tambah";

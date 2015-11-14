@@ -20,23 +20,23 @@
 							<th>Nama</th>
 							<th>Alamat</th>
 							<th>No. Telp</th>
-							<th>Email</th>
-							<th>Aksi</th>
+							<th>E-mail</th>
+							<th>Pilihan</th>
 						</thead>
 						<tbody>
 							<!-- inputan untuk memasukkan data -->
 							<tr>
 								<td>
-									<input type="text" class="form-control" ng-model="memberForm.nama" />
+									<input type="text" class="form-control" ng-model="memberForm.nama" placeholder="Nama Lengkap" />
 								</td>
 								<td>
-									<input type="text" class="form-control" ng-model="memberForm.alamat" />
+									<input type="text" class="form-control" ng-model="memberForm.alamat" placeholder="Alamat" />
 								</td>
 								<td>
-									<input type="text" class="form-control" ng-model="memberForm.telp" />
+									<input type="text" class="form-control" ng-model="memberForm.telp" placeholder="No. Telpon / HP" />
 								</td>
 								<td>
-									<input type="text" class="form-control" ng-model="memberForm.email" />
+									<input type="text" class="form-control" ng-model="memberForm.email" placeholder="E-mail" />
 								</td>
 								<td>
 									<button class="btn btn-primary" ng-click="simpanData()">Simpan</button>
@@ -55,8 +55,8 @@
 							<th>Nama</th>
 							<th>Alamat</th>
 							<th>No. Telp</th>
-							<th>Email</th>
-							<th>Aksi</th>
+							<th>E-mail</th>
+							<th>Pilihan</th>
 						</thead>
 						<tbody>
 							<!-- ng-repeat untuk merender semua data pelanggan -->
@@ -68,9 +68,9 @@
 								<td>{{item.email}}</td>
 								<td>
 									<!-- tombol untuk menset inputan sesuai dengan baris yang dipilih agar bisa diedit -->
-									<button class="btn btn-success" ng-click="ubah(item,memberForm)">Ubah</button>
+									<button class="btn btn-xs btn-success" ng-click="ubah(item,memberForm)">Ubah</button>
 									<!-- tombol untuk menghapus data -->
-									<button class="btn btn-danger" ng-click="hapusData(item.id)">Hapus</button>
+									<button class="btn btn-xs btn-danger" ng-click="hapusData(item.id)">Hapus</button>
 								</td>
 							</tr>
 						</tbody>
